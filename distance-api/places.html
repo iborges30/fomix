@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .autocomplete{
+            position: relative;
+        }
+        #autocomplete-result{
+            position: absolute;
+            left: 0;
+            background-color: rgb(250, 244, 244);
+            border-radius: 6px;
+        }
+        #autocomplete-result ul {
+        padding: 0;
+        margin: 0;
+        }
+        #autocomplete-result ul li{
+            border-bottom: 1px solid rgb(223, 219, 219);
+            list-style: none;
+            padding: 8px 10px;
+        }
+        /*INCLUI ESSA FORMATAÇÃO PARA QUEBRA DE LINHA*/
+        #autocomplete-result ul li span{
+            display: block;
+            padding: 0 0 3px 0;
+        }
+    </style>
+</head>
+<div class="autocomplete">
+    <input id="search" class="search" name="search" type="text">
+    <div id="autocomplete-result">
+
+    </div>
+</div>
+
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var urlApi = "http://localhost/projetos/arquivos_de_testes/Educaplus/places.php";
+        $('#search').on('input', function (e) {
+            $.ajax({
+                url: urlApi,
+                method: 'GET',
+                dataType: 'html',
+                data: { input: $(this).val() },
+                success: function (data) {
+                    $('#autocomplete-result').html(data);
+                },
+                error: function(err){
+                    console.log(err);
+                }
+            })
+        });
+        $('#autocomplete-result').on('click', '.place-item', function(){
+            $('#search').val($(this).attr('data-description'));
+            $('#autocomplete-result').html('');
+        });
+    </script>
+</body>
+
+</html>

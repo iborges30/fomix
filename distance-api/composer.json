@@ -1,0 +1,21 @@
+{
+    "name": "fhcoder/distance-api",
+    "description": "Api consulta preço por distancia",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Henrique",
+            "email": "fhcoder@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}

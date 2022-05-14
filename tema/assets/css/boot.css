@@ -1,0 +1,108 @@
+/***************************************
+*************** RESETS GERAIS***********
+****************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/***************************************
+*************** OVERFLOW ***********
+****************************************/
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/***************************************
+*************** IMAGENS ***********
+****************************************/
+
+img {
+    max-width: 100%;
+    border: none !important;
+    vertical-align: middle;
+}
+
+embed,
+img,
+picture,
+video {
+    max-width: 100%;
+    height: auto
+}
+
+
+/***************************************
+*************** ALINHAMENTO ***********
+****************************************/
+
+.all {
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/***************************************
+*************** COLUNAS ***********
+****************************************/
+
+.col-1 {
+    flex-basis: 100%;
+}
+
+.col-2 {
+    flex-basis: 50%;
+}
+
+.col-3 {
+    flex-basis: 33.33%;
+}
+
+.col-4 {
+    flex-basis: 25%;
+}
+
+.col-5 {
+    flex-basis: 20%
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.poppins {
+    font-family: 'poppins', sans-serif;
+}
+
+.text-dark {
+    color: #111111;
+}
+
+.text-gray {
+    color: #4C4C4C;
+}
+
+.text-center {
+    text-align: center;
+}
