@@ -1,4 +1,4 @@
-﻿{
+{
     "name": "upinside/fsphp",
     "description": "Formação Full Stack PHP Developer",
     "minimum-stability": "stable",
@@ -17,7 +17,10 @@
         },
         "files": [
             "source/Boot/Config.php",
-            "source/Boot/Helpers.php"
+            "source/Boot/Helpers.php",
+            "source/Boot/Minify/Web.php",
+            "source/Boot/Minify/App.php",
+            "source/Boot/Minify/Admin.php"
      
         ]
     },

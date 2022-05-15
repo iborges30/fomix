@@ -1,24 +1,24 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => '76658c197f5a96fd82c81025dd2e7cb912d61722',
+    'reference' => '8312867e426087f63badc7584c20dec1903ce039',
     'name' => 'upinside/fsphp',
   ),
   'versions' => 
   array (
     'coffeecode/cropper' => 
     array (
-      'pretty_version' => '1.3.4',
-      'version' => '1.3.4.0',
+      'pretty_version' => '1.3.5',
+      'version' => '1.3.5.0',
       'aliases' => 
       array (
       ),
-      'reference' => '4c98fa8601ad1dcb3d94a605e7bfa36b7ac5b87e',
+      'reference' => '25fa1c68359cca1d3bc71a72fb24c9589d3e5f61',
     ),
     'coffeecode/optimizer' => 
     array (
@@ -67,12 +67,12 @@
     ),
     'matthiasmullie/minify' => 
     array (
-      'pretty_version' => '1.3.66',
-      'version' => '1.3.66.0',
+      'pretty_version' => '1.3.68',
+      'version' => '1.3.68.0',
       'aliases' => 
       array (
       ),
-      'reference' => '45fd3b0f1dfa2c965857c6d4a470bea52adc31a6',
+      'reference' => 'c00fb02f71b2ef0a5f53fe18c5a8b9aa30f48297',
     ),
     'matthiasmullie/path-converter' => 
     array (
@@ -85,21 +85,21 @@
     ),
     'phpmailer/phpmailer' => 
     array (
-      'pretty_version' => 'v6.5.0',
-      'version' => '6.5.0.0',
+      'pretty_version' => 'v6.6.0',
+      'version' => '6.6.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'a5b5c43e50b7fba655f793ad27303cd74c57363c',
+      'reference' => 'e43bac82edc26ca04b36143a48bde1c051cfd5b1',
     ),
     'rosell-dk/image-mime-type-guesser' => 
     array (
-      'pretty_version' => '0.3',
-      'version' => '0.3.0.0',
+      'pretty_version' => '0.3.1',
+      'version' => '0.3.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '204fd61ca81e3b0ba46c6165dab8f74816b1fe99',
+      'reference' => '5915934d66a7869cecc7141adf90581aad81023d',
     ),
     'rosell-dk/webp-convert' => 
     array (
@@ -112,12 +112,12 @@
     ),
     'upinside/fsphp' => 
     array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => '76658c197f5a96fd82c81025dd2e7cb912d61722',
+      'reference' => '8312867e426087f63badc7584c20dec1903ce039',
     ),
   ),
 );

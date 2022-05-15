@@ -858,7 +858,7 @@
     margin-bottom: 120px;
 }
 
-.orders-action-send .btn-finished {
+.orders-action-send .btn-finished, .btn-register-friends {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     padding: 15px 20px;
@@ -1736,4 +1736,18 @@ li.place-item{
     margin-top: 0;
     font-weight: 600;
     font-size: .85em;
+}
+.terms-friends{
+    margin-top: 20px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.register-form-mb{
+    margin-bottom: 30px !important;
+}
+.load-register {
+    width: 30px;
+    margin: 0 auto;
+    display: none;
 }

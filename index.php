@@ -63,6 +63,10 @@ $route->get("/feed/{slug_city}", "Web:feed");
 //LIKE
 $route->post("/feed/like", "Web:like");
 
+//CONVÊNIO
+$route->get("/convenio/cadastro", "Web:register");
+$route->post("/convenio/cadastro", "Web:createFriend");
+
 /**
  * VALIDAÇÔES
  */

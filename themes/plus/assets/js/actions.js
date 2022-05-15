@@ -1005,6 +1005,8 @@ $(function () {
     });
 
 
+
+
     //FUNÇÃO PARA EXECUTAR O ALERTA
     function alertMensage(message, color) {
         $.alert({

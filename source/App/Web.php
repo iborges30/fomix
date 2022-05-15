@@ -1187,6 +1187,61 @@ WHERE
         echo json_encode($json);
 
     }
+
+
+    public function register(?array $data): void
+    {
+
+        $head = $this->seo->render(
+            CONF_SITE_NAME . " Realizar cadastro no convênio",
+            CONF_SITE_DESC,
+            url(),
+            theme("/assets/images/share.jpg")
+        );
+        echo $this->view->render("register", [
+            "head" => $head,
+        ]);
+    }
+
+
+
+    public function createFriend(?array $data): void
+    {
+        //create
+        if (!empty($data["action"]) && $data["action"] == "create") {
+            $data = filter_var_array($data, FILTER_SANITIZE_STRIPPED);
+            $data["document"] = preg_replace('/[^0-9]/', '', $data["document"]);
+            $data["whatsapp"] = preg_replace('/[^0-9]/', '', $data["whatsapp"]);
+
+            if (!$data["csrf"]) {
+                die();
+            }
+            if (!validadeDocumentClient($data["document"])) {
+                $json["error"] = true;
+                echo json_encode($json);
+                return;
+            }
+
+            $client = (new Clients())->findByDocument($data["document"]);
+
+            if ($client) {
+                $client->friend = "friend";
+                $client->save();
+                $json["friend"] = true;
+            } else {
+                $client = new Clients();
+                $client->client = $data["client"];
+                $client->document = $data["document"];
+                $client->whatsapp = $data["whatsapp"];
+                $client->friend = $data["friend"];
+                $client->friend = $data["friend"];
+                $client->save();
+                $json["friend"] = true;
+            }
+            echo json_encode($json);
+        }
+
+    }
 }
 
 
